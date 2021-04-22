@@ -3,7 +3,7 @@ import { v4 as uuid } from 'uuid';
 
 @Entity('setting')
 class Setting {
-  @PrimaryColumn({name: "id"})
+  @PrimaryColumn({name: 'id'})
   id: string;
 
   @Column()
@@ -25,4 +25,4 @@ class Setting {
   }
 }
 
-export { Setting };
+export { Setting }

@@ -6,4 +6,4 @@ class SettingRepository extends Repository<Setting> {
 
 }
 
-export { SettingRepository };
+export { SettingRepository }

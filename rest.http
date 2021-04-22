@@ -7,9 +7,26 @@ content-type: application/json
 
 {
   "chat": true,
-  "username": "admin3"
+  "username": "flavio"
 }
 
 ###
+POST  http://localhost:3333/user
+content-type: application/json
 
+{
+  "email": "flaviomreispgers@gmail.com"
+}
 
+###
+POST http://localhost:3333/message
+Content-Type: application/json
+
+{
+  "user_id": "c5d3f475-e628-4203-ae91-2dc87dab79f0",
+  "text": "Qual o seu nome?",
+  "admin_id": "9e3ad809-6372-4506-83fb-8fd1acab62fd"
+}
+
+###
+GET http://localhost:3333/message/c5d3f475-e628-4203-ae91-2dc87dab79f0
