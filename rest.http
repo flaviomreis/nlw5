@@ -30,3 +30,11 @@ Content-Type: application/json
 
 ###
 GET http://localhost:3333/message/c5d3f475-e628-4203-ae91-2dc87dab79f0
+
+###
+PUT http://localhost:3333/setting/admin
+Content-Type: application/json
+
+{
+  "chat": false
+}

@@ -10,6 +10,8 @@ const userController = new UserController();
 const messageController = new MessageController();
 
 routes.post('/setting', settingController.create);
+routes.get('/setting/:username', settingController.getByUsername);
+routes.put('/setting/:username', settingController.update);
 routes.post('/user', userController.create);
 routes.post('/message', messageController.create);
 routes.get('/message/:id', messageController.showByUser);
