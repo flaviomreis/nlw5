@@ -7,7 +7,7 @@ content-type: application/json
 
 {
   "chat": true,
-  "username": "flavio"
+  "username": "admin"
 }
 
 ###
@@ -36,5 +36,5 @@ PUT http://localhost:3333/setting/admin
 Content-Type: application/json
 
 {
-  "chat": false
+  "chat": true
 }
